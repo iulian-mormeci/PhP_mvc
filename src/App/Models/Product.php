@@ -1,4 +1,8 @@
 <?php
+
+namespace App\Models;
+
+use PDO;
 /* classe product con all interno un solo metodo get data */
 class Product
 {

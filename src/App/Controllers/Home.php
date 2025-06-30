@@ -1,4 +1,6 @@
 <?php
+
+namespace App\Controllers;
 /* classe home con un solo metodo index che ritorna la view home.php */
 class Home
 {

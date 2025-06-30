@@ -1,4 +1,7 @@
 <?php 
+
+namespace Framework;
+
 /* classe router con all interno un attributo e due metodi */
 class Router
 {

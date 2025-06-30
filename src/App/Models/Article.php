@@ -1,4 +1,6 @@
 <?php
+
+namespace App\Models;
 /* modello article con un metodo get data che si collega al db e fa una querry di tutti i record al itnerno della tabella  */
 class Article 
 {
