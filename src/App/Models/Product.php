@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+/* uso della keyword use per pdo in quanto usando un namespace php non riesce a trovare la classe pdo perche la va a cercare all iterno del percorso del name space e non direttamente dalla root del progetto */
 use PDO;
 /* classe product con all interno un solo metodo get data */
 class Product
