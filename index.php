@@ -10,12 +10,15 @@ spl_autoload_register(function (string $class_name)
 /* inizializazione di un nuovo oggetto router */
 $router = new Framework\Router;
 /* aggiunta delle rotte del sito web usando il metodo della classe router add() e passando come parametro all interno path */
+$router->add("/{controller}/{action}");
 $router->add("/home/index", ["controller" => "home", "action" => "index"]); /* rotta per la home index */
 $router->add("/products", ["controller" => "products", "action" => "index"]);/* rotta per i products */
 $router->add("/", ["controller" => "home", "action" => "index"]);/* rotta per la home page */
 
 /* creazione variabile e esecuzione del metodo match con passaggio della variabile path all interno */
 $params = $router->match($path);
+
+
 /* controllo se all interno della variabile params e presente un valore booleano false per rotta non trovata, se trova false esce e ritorna il messaggio rotta non trovata */
 if($params === false)
 {
